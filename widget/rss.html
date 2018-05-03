@@ -9,14 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="rss.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#divRss').FeedEk({
-                FeedUrl: 'http://www.clg-quintinye-noisy.ac-versailles.fr/spip.php?page=backend'
-            });
-        });
+        jQuery(function($) {
+             $("#rss-feeds").rss("http://feeds.feedburner.com/premiumpixels")
+        })
     </script>
 </head>
 <body>
-    <div id="divRss"></div>
+    <div id="rss-feeds"></div>
 </body>
 </html>
