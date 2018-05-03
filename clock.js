@@ -22,7 +22,7 @@ function date_heure(id)
         {
                 s = "0"+s;
         }
-        resultat = '<div id=\"date_heure\"><span id=\"heure\">'+h+':'+m+'</span><br /><span id=\"date"\>'+jours[jour]+' '+j+' '+mois[moi]+' '+annee+'</span></div>';
+        resultat = '<span id=\"heure\">'+h+':'+m+'</span><br /><span id=\"date"\>'+jours[jour]+' '+j+' '+mois[moi]+' '+annee+'</span>';
         document.getElementById(id).innerHTML = resultat;
         setTimeout('date_heure("'+id+'");','1000');
         return true;
