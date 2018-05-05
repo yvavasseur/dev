@@ -12,7 +12,7 @@
     jQuery(function($) {
       $("#rss-feeds").rss("http://www.clg-quintinye-noisy.ac-versailles.fr/spip.php?page=backend",
       {
-        entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/>{teaserImage}{shortBodyPlain}</li>',
+        entryTemplate:'<li>{date} {title}<br/>{teaserImage}{shortBodyPlain}</li>',
         limit: 10,
         dateFormat: 'DD MMM YY',
         dateLocale: 'fr'
