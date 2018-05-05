@@ -13,7 +13,7 @@
       $("#rss-feeds").rss("http://www.clg-quintinye-noisy.ac-versailles.fr/spip.php?page=backend",
       {
         layoutTemplate:'<div class="container">{entries}</div>',
-        entryTemplate:'<div class="entries"><span class="tile">{title}</span><span class="date">le {date}, par {author}</span><br/><span class="text">{shortBodyPlain}...</span></div>',
+        entryTemplate:'<div class="entries"><span class="title">{title}</span><span class="date">le {date}, par {author}</span><br/><span class="text">{shortBodyPlain}...</span></div>',
         limit: 6,
         dateFormat: 'L'
       })
