@@ -12,7 +12,8 @@
     jQuery(function($) {
       $("#rss-feeds").rss("http://www.clg-quintinye-noisy.ac-versailles.fr/spip.php?page=backend",
       {
-        entryTemplate:'<li><b>{title}</b><br /><i>le {date}, par {author}</i><br/>{teaserImage}{shortBodyPlain}<br /></li>',
+        layoutTemplate'<div class="container">{entries}</div>',
+        entryTemplate:'<div class="entries"><b>{title}</b><br /><i>le {date}, par {author}</i><br/>{teaserImage}{shortBodyPlain}</div>',
         limit: 6,
         dateFormat: 'L'
       })
