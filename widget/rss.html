@@ -12,10 +12,9 @@
     jQuery(function($) {
       $("#rss-feeds").rss("http://www.clg-quintinye-noisy.ac-versailles.fr/spip.php?page=backend",
       {
-        entryTemplate:'<li><b>{title}</b><br /><i>le {date}, par {author}</i><br/>{teaserImage}{shortBodyPlain}</li>',
-        limit: 10,
-        dateLocale: 'fr',
-        dateFormat: 'LL'
+        entryTemplate:'<li><b>{title}</b><br /><i>le {date}, par {author}</i><br/>{teaserImage}{shortBodyPlain}<br /></li>',
+        limit: 6,
+        dateFormat: 'L'
       })
     })
   </script>
